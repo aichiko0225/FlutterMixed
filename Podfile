@@ -1,5 +1,5 @@
 # Flutter
-flutter_application_path = '../flutter_module/'
+flutter_application_path = './flutter_module/'
 load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 platform :ios, '11.0'
