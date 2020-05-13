@@ -1,0 +1,14 @@
+//
+//  Flutter.xcconfig
+//  FlutterMixed
+//  
+//  Created by ash on 2020/5/13.
+//  Copyright © 2020 ash. All rights reserved.
+//
+    
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "../../flutter_module/.ios/Flutter/Generated.xcconfig"
+ENABLE_BITCODE=NO

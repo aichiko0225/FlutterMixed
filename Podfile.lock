@@ -1,0 +1,35 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_module (0.0.1):
+    - Flutter
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+  - Reveal-SDK (4)
+
+DEPENDENCIES:
+  - Flutter (from `flutter_module/.ios/Flutter/engine`)
+  - flutter_module (from `flutter_module/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `flutter_module/.ios/Flutter/FlutterPluginRegistrant`)
+  - Reveal-SDK (= 4)
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - Reveal-SDK
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: flutter_module/.ios/Flutter/engine
+  flutter_module:
+    :path: flutter_module/.ios/Flutter
+  FlutterPluginRegistrant:
+    :path: flutter_module/.ios/Flutter/FlutterPluginRegistrant
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_module: 37f078337caf8acad3074374a49bf81442fd3e07
+  FlutterPluginRegistrant: d59dd07dd90e9c6430996073575a5bd1ea19677e
+  Reveal-SDK: 178c927f1a3230648d3a92b96f6e730a35b2750a
+
+PODFILE CHECKSUM: 214ecbb401e00abe6e248e19d337d9bc325500a4
+
+COCOAPODS: 1.8.4
