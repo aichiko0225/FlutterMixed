@@ -12,8 +12,15 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow? = UIWindow.init(frame: UIScreen.main.bounds)
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let router = PlatformRouterImp.init();
+        FlutterBoostPlugin.sharedInstance().startFlutter(with: router, onStart: { (engine) in
+        });
+        
         return true
     }
 

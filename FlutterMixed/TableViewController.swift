@@ -9,6 +9,7 @@
 
 import UIKit
 import Flutter
+import flutter_boost
 
 class TableViewController: UITableViewController {
 
@@ -24,8 +25,11 @@ class TableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let flutterVC = FlutterViewController()
-        navigationController?.pushViewController(flutterVC, animated: true)
+        if indexPath.row == 0 {
+            let flutterVC = FlutterViewController()
+            navigationController?.pushViewController(flutterVC, animated: true)
+        }
+        
     }
 
 }
