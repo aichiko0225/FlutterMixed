@@ -15,12 +15,6 @@ class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     
@@ -28,8 +22,37 @@ class TableViewController: UITableViewController {
         if indexPath.row == 0 {
             let flutterVC = FlutterViewController()
             navigationController?.pushViewController(flutterVC, animated: true)
+        }else if indexPath.row == 1 {
+            FlutterBoostPlugin.open("first", urlParams:[kPageCallBackId:"MycallbackId#1"], exts: ["animated":true], onPageFinished: { (_ result:Any?) in
+                print(String(format:"call me when page finished, and your result is:%@", result as! CVarArg));
+            }) { (f:Bool) in
+                print(String(format:"page is opened"));
+            }
+        }else if indexPath.row == 2 {
+            FlutterBoostPlugin.present("second", urlParams:[kPageCallBackId:"MycallbackId#2"], exts: ["animated":true], onPageFinished: { (_ result:Any?) in
+                print(String(format:"call me when page finished, and your result is:%@", result as! CVarArg));
+            }) { (f:Bool) in
+                print(String(format:"page is presented"));
+            }
+        }else if indexPath.row == 3 {
+            FlutterBoostPlugin.open("tab", urlParams:[kPageCallBackId:"MycallbackId#3"], exts: ["animated":true], onPageFinished: { (_ result:Any?) in
+                print(String(format:"call me when page finished, and your result is:%@", result as! CVarArg));
+            }) { (f:Bool) in
+                print(String(format:"page is opened"));
+            }
+        }else if indexPath.row == 4 {
+            FlutterBoostPlugin.open("flutterFragment", urlParams:[kPageCallBackId:"MycallbackId#4"], exts: ["animated":true], onPageFinished: { (_ result:Any?) in
+                print(String(format:"call me when page finished, and your result is:%@", result as! CVarArg));
+            }) { (f:Bool) in
+                print(String(format:"page is opened"));
+            }
+        }else if indexPath.row == 5 {
+            FlutterBoostPlugin.open("flutterPage", urlParams:[kPageCallBackId:"MycallbackId#5"], exts: ["animated":true], onPageFinished: { (_ result:Any?) in
+                print(String(format:"call me when page finished, and your result is:%@", result as! CVarArg));
+            }) { (f:Bool) in
+                print(String(format:"page is opened"));
+            }
         }
-        
     }
 
 }

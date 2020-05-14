@@ -18,6 +18,7 @@ class PlatformRouterImp: NSObject, FLBPlatform {
         let vc = FLBFlutterViewContainer.init();
         vc.setName(url, params: urlParams);
         self.navigationController().pushViewController(vc, animated: animated);
+        vc.navigationController?.setNavigationBarHidden(true, animated: false)
         completion(true);
     }
     

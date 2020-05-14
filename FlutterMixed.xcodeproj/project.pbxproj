@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5E47D006246BA2170042748F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47D005246BA2170042748F /* AppDelegate.swift */; };
-		5E47D008246BA2170042748F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47D007246BA2170042748F /* SceneDelegate.swift */; };
 		5E47D00A246BA2170042748F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47D009246BA2170042748F /* ViewController.swift */; };
 		5E47D00D246BA2170042748F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E47D00B246BA2170042748F /* Main.storyboard */; };
 		5E47D00F246BA21C0042748F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E47D00E246BA21C0042748F /* Assets.xcassets */; };
@@ -24,7 +23,6 @@
 		2F0935E8452CBA08A546E999 /* Pods_FlutterMixed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlutterMixed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E47D002246BA2170042748F /* FlutterMixed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlutterMixed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E47D005246BA2170042748F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5E47D007246BA2170042748F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5E47D009246BA2170042748F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5E47D00C246BA2170042748F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E47D00E246BA21C0042748F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 			children = (
 				5E47D019246BA2430042748F /* Config */,
 				5E47D005246BA2170042748F /* AppDelegate.swift */,
-				5E47D007246BA2170042748F /* SceneDelegate.swift */,
 				5E47D009246BA2170042748F /* ViewController.swift */,
 				5E47D01B246BBC4D0042748F /* TableViewController.swift */,
 				5EA13C4F246BE7E9007D26D2 /* CCTableViewController.h */,
@@ -250,7 +247,6 @@
 				5E47D00A246BA2170042748F /* ViewController.swift in Sources */,
 				5E47D006246BA2170042748F /* AppDelegate.swift in Sources */,
 				5EA13C53246BF2FF007D26D2 /* PlatformRouterImp.swift in Sources */,
-				5E47D008246BA2170042748F /* SceneDelegate.swift in Sources */,
 				5EA13C51246BE7E9007D26D2 /* CCTableViewController.m in Sources */,
 				5E47D01C246BBC4D0042748F /* TableViewController.swift in Sources */,
 			);
@@ -401,7 +397,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8H9ZZ4FNH;
 				INFOPLIST_FILE = FlutterMixed/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,7 +420,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8H9ZZ4FNH;
 				INFOPLIST_FILE = FlutterMixed/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
