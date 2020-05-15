@@ -41,7 +41,7 @@ class TableViewController: UITableViewController {
                 print(String(format:"page is opened"));
             }
         }else if indexPath.row == 4 {
-            FlutterBoostPlugin.open("flutterFragment", urlParams:[kPageCallBackId:"MycallbackId#4"], exts: ["animated":true], onPageFinished: { (_ result:Any?) in
+            FlutterBoostPlugin.open("flutterFragment", urlParams:[kPageCallBackId:"MycallbackId#4", "tag": "aaaaaaaaaa"], exts: ["animated":true], onPageFinished: { (_ result:Any?) in
                 print(String(format:"call me when page finished, and your result is:%@", result as! CVarArg));
             }) { (f:Bool) in
                 print(String(format:"page is opened"));

@@ -2,17 +2,22 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_boost/flutter_boost.dart';
 
+// ignore: must_be_immutable
 class FirstRouteWidget extends StatelessWidget {
+
+  String _title;
+
+//  FirstRouteWidget({this._title});
 
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
       navigationBar:  CupertinoNavigationBar(
-        middle: Text("First Route"),
+        middle: Text(_title == null ? "First Route": _title),
         leading: CupertinoButton(
           child: Icon(Icons.arrow_back_ios, color: CupertinoColors.activeBlue,size: 25,),
           padding: EdgeInsets.all(0),
-          onPressed: _goback,
+          onPressed: _goBack,
         )
         
       ),
@@ -35,7 +40,7 @@ class FirstRouteWidget extends StatelessWidget {
     );
   }
 
-  _goback() {
+  _goBack() {
     FlutterBoost.singleton.closeCurrent();
   }
 }
