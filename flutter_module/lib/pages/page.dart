@@ -25,7 +25,7 @@ class FirstRouteWidget extends StatelessWidget {
         child: CupertinoButton(
           borderRadius: BorderRadius.all(Radius.circular(4)),
           color: CupertinoColors.activeBlue,
-          child: const Text('Open second route'),
+          child: const Text('Open second route23333'),
           onPressed: () {
             print('open second page!');
             FlutterBoost.singleton
